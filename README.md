@@ -42,7 +42,17 @@ The project follows a **Medallion Architecture** approach:
 ### 🥇 Gold Layer (Business-Ready Data)
 - Data is structured into **fact and dimension tables**  
 - SQL views are used to organize and aggregate data  
-- Provides clean, reliable datasets ready for downstream analytics  
+- Provides clean, reliable datasets ready for downstream analytics
+
+## 🔁 Data Flow
+
+### Flow Explanation:
+- Data is sourced from ERP (3 tables) and CRM (3 tables)
+- Loaded into Bronze layer as raw tables (6 tables)
+- Transformed into cleaned tables in Silver layer (6 tables)
+- Converted into analytical models in Gold layer:
+  - 1 Fact View
+  - 2 Dimension Views (Customer, Product)
 
 ## 🔄 ETL Process
 
