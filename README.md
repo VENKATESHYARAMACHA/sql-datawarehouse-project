@@ -1,6 +1,6 @@
 # SQL Data Warehouse using Medallion Architecture
 
-## Project Overview
+## 📌 Project Overview
 
 Built a SQL based data warehouse to centralize raw ERP and CRM data into a structured analytical system using a Medallion Architecture (Bronze, Silver, Gold). Implemented ETL pipelines and data transformations to prepare clean, reliable, and analysis-ready data.
 
