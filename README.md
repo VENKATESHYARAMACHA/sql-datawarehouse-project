@@ -23,8 +23,6 @@ To address this, I designed and implemented a **SQL based Data Warehouse** that:
 - Structures data into clean, analysis ready models  
 - Ensures consistency through standardized naming conventions  
 
-The architecture is divided into three layers to improve data quality, performance, and usability.
-
 ## 🧱 Architecture
 
 ![Data Architecture](https://github.com/user-attachments/assets/e54c5fa9-a2fa-4371-8339-2da1e2b43e5d)
