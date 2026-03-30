@@ -135,15 +135,15 @@ To maintain consistency and readability across the data warehouse, the following
 
 ## 📈 Results
 
-- Centralized data from multiple sources into a single system  
-- Improved data quality through transformation pipelines  
-- Standardized and structured data for analytics use cases  
-- Created a scalable foundation for downstream reporting and BI tools
+- Centralized data from ERP and CRM systems into a single data warehouse  
+- Improved data quality through structured cleaning and transformation in the Silver layer  
+- Standardized data using consistent naming conventions and modeling practices  
+- Built a scalable data model (fact and dimension views) for downstream analytics and BI tools  
 
 ## 🛠️ Technologies Used
-- SQL  
-- (Add your DB: PostgreSQL / MySQL / SQL Server)  
-- Git & GitHub  
+
+- T-SQL (SQL Server) for ETL processes, data transformation, and modeling  
+- Git & GitHub for version control  
 
 ## 🚀 How to Run
 
