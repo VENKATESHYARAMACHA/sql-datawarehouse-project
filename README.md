@@ -70,13 +70,20 @@ From the Silver layer, data is modeled and organized into the Gold layer as anal
 
 ## 🗃️ Data Model
 
+![Data Model](https://github.com/user-attachments/assets/d7048c69-d935-4000-954d-d62319bfc113)
+
+## ⭐ Star Schema (Gold Layer)
+
 The Gold layer follows a **Star Schema** design:
 
-- **Fact Tables**
-  - Store measurable business metrics (prepared for analysis)
+- **Fact Table (`fact_sales`)**
+  - Stores transactional data such as sales amount, quantity, pricing, and order details
 
 - **Dimension Tables**
-  - Store descriptive attributes for context
+  - `dim_customer` → contains customer-related information  
+  - `dim_products` → contains product-related information  
+
+These tables are connected using primary and foreign keys, enabling efficient querying and making the data ready for downstream analytics and reporting.
 
 ## 📂 Project Structure
 
