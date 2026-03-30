@@ -72,7 +72,7 @@ From the Silver layer, data is modeled and organized into the Gold layer as anal
 
 ![Data Model](https://github.com/user-attachments/assets/d7048c69-d935-4000-954d-d62319bfc113)
 
-## ⭐ Star Schema (Gold Layer)
+### ⭐ Star Schema (Gold Layer)
 
 The Gold layer follows a **Star Schema** design:
 
