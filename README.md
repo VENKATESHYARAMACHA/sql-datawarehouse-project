@@ -115,19 +115,23 @@ sql-data-warehouse-project/
 
 ## 📏 Naming Conventions
 
-To ensure consistency and maintainability, standardized naming conventions were followed:
+To maintain consistency and readability across the data warehouse, the following naming standards are followed:
 
-- Tables: `layer_entity_description`  
-  - Example: `silver_customer_cleaned`
+- All object names use **snake_case** and lowercase letters  
+- Bronze and Silver tables follow: `<source>_<table_name>`  
+  - Example: `crm_customer_info`, `erp_product_data`  
 
-- Fact tables: `fact_<business_process>`  
-  - Example: `fact_sales`
+- Gold layer uses business-friendly naming:
+  - Fact tables → `fact_<entity>` (e.g., `fact_sales`)  
+  - Dimension tables → `dim_<entity>` (e.g., `dim_customers`)  
 
-- Dimension tables: `dim_<entity>`  
-  - Example: `dim_customer`
+- Surrogate keys use `_key` suffix  
+  - Example: `customer_key`  
 
-- Views: `vw_<purpose>`  
-  - Example: `vw_sales_summary`
+- Metadata columns use `dwh_` prefix  
+  - Example: `dwh_load_date`  
+
+> For detailed naming rules, refer to [`docs/naming_conventions.md`](docs/naming_conventions.md)
 
 ## 📈 Results
 
