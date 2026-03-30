@@ -46,13 +46,16 @@ The project follows a **Medallion Architecture** approach:
 
 ## 🔁 Data Flow
 
+![Data Flow](https://github.com/user-attachments/assets/6a925060-07b6-4e7a-a9ec-dd091c48174c)
+
 ### Flow Explanation:
-- Data is sourced from ERP (3 tables) and CRM (3 tables)
-- Loaded into Bronze layer as raw tables (6 tables)
-- Transformed into cleaned tables in Silver layer (6 tables)
-- Converted into analytical models in Gold layer:
-  - 1 Fact View
-  - 2 Dimension Views (Customer, Product)
+Data is sourced from ERP (3 tables) and CRM (3 tables) systems
+All 6 tables are loaded into the Bronze layer in raw format without any changes
+The data is then moved to the Silver layer, where it is cleaned, standardized, and validated
+From the Silver layer, data is modeled and organized into the Gold layer as analytical views:
+- fact_sales → contains transactional/measurable data
+- dim_customers → contains customer details
+- dim_products → contains product information
 
 ## 🔄 ETL Process
 
