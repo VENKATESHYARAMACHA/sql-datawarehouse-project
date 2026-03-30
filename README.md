@@ -147,46 +147,31 @@ To maintain consistency and readability across the data warehouse, the following
 
 ## 🚀 How to Run
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/sql-data-warehouse-project.git
-cd sql-data-warehouse-project
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/sql-data-warehouse-project.git
+   cd sql-data-warehouse-project
+   ```
 
----
+2. Set up SQL Server and create a database:
+   ```sql
+   CREATE DATABASE data_warehouse;
+   ```
 
-### 2. Set Up Database
-- Install and open your SQL database (PostgreSQL / MySQL / SQL Server)
-- Create a new database:
-```sql
-CREATE DATABASE data_warehouse;
-```
+3. Execute SQL scripts layer by layer:
 
----
+   - **Bronze Layer**
+     - Run DDL scripts (table creation)
+     - Run data load scripts (raw data ingestion)
 
-### 3. Execute SQL Scripts (Follow Order)
+   - **Silver Layer**
+     - Run DDL scripts (cleaned table creation)
+     - Run transformation scripts (data cleaning and standardization)
 
-#### 🥉 Step 1: Load Bronze Layer (Raw Data)
-- Navigate to `/sql/bronze/`
-- Run scripts to load raw ERP and CRM data  
+   - **Gold Layer**
+     - Run the script to create fact and dimension views
 
----
-
-#### 🥈 Step 2: Transform into Silver Layer
-- Navigate to `/sql/silver/`
-- Execute scripts to clean and standardize data  
-
----
-
-#### 🥇 Step 3: Create Gold Layer
-- Navigate to `/sql/gold/`
-- Run scripts to create:
-  - Fact tables  
-  - Dimension tables  
-  - Views for structured data  
-
-### 📝 Note
-Each SQL script contains inline comments explaining execution steps and logic.
+> Each SQL file contains inline comments explaining execution steps.
 
 ## 🙌 Acknowledgements
 This project was built as part of a hands-on data engineering learning experience inspired by Bara’s Data Warehouse project.
