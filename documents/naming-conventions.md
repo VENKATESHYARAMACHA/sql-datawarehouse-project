@@ -20,7 +20,7 @@ This document defines the standard naming conventions for schemas, tables, colum
 - Preserve source system naming.
 - Format:
 
-  <source_system>_<entity>
+`<source_system>_<entity>`
 
 - Examples:
   - crm_customer_info
