@@ -76,7 +76,7 @@ This document defines the standard naming conventions for schemas, tables, colum
 - Use consistent naming for data loading procedures.
 
   load_<layer>
-
+  
 - Examples:
   - load_bronze
   - load_silver
