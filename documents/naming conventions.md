@@ -88,6 +88,5 @@ This document defines the standard naming conventions for schemas, tables, colum
 - Maintain **consistency across all layers**.
 - Prefer **singular names** (e.g., `dim_customer`, not `dim_customers`).
 - Use **descriptive, business-aligned naming** in the Gold layer.
-- Avoid unnecessary abbreviations.
 
 ---
