@@ -131,7 +131,7 @@ To maintain consistency and readability across the data warehouse, the following
 - Metadata columns use `dwh_` prefix  
   - Example: `dwh_load_date`  
 
-> For detailed naming rules, refer to [`documents/naming%20conventions.md`](documents/naming_conventions.md)
+> For detailed naming rules, refer to [naming conventions](documents/naming%20conventions.md)
 
 ## 📈 Results
 
