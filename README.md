@@ -46,7 +46,7 @@ The project follows a **Medallion Architecture** approach:
 
 ## 🔁 Data Flow
 
-![Data Flow](https://github.com/user-attachments/assets/6a925060-07b6-4e7a-a9ec-dd091c48174c)
+![Data Flow](https://github.com/user-attachments/assets/de473170-1b59-41d1-9b20-e1025864ffad)
 
 ### Flow Explanation:
 - Data is sourced from ERP (3 tables) and CRM (3 tables) systems.  
@@ -70,7 +70,7 @@ The project follows a **Medallion Architecture** approach:
 
 ## 🗃️ Data Model
 
-![Data Model](https://github.com/user-attachments/assets/d7048c69-d935-4000-954d-d62319bfc113)
+![Data Model](https://github.com/user-attachments/assets/d7e855a5-002a-4df1-ba47-ed0c329a0322)
 
 ### ⭐ Star Schema (Gold Layer)
 
@@ -131,7 +131,7 @@ To maintain consistency and readability across the data warehouse, the following
 - Metadata columns use `dwh_` prefix  
   - Example: `dwh_load_date`  
 
-> For detailed naming rules, refer to [`docs/naming_conventions.md`](docs/naming_conventions.md)
+> For detailed naming rules, refer to [`documents/naming_conventions.md`](documents/naming_conventions.md)
 
 ## 📈 Results
 
