@@ -190,10 +190,10 @@ scripts/gold/create_gold_views.sql
 validation/silver_checks.sql
 validation/gold_checks.sql
 ```
-📌 Notes
-Execute scripts sequentially: setup → bronze → silver → gold
-Update file paths in BULK INSERT based on your local system
-Each script includes inline comments for guidance
+📌 Notes  
+- Execute scripts sequentially: setup → bronze → silver → gold
+- Update file paths in BULK INSERT based on your local system
+- Each script includes inline comments for guidance
 
 ## 🙌 Acknowledgements
 This project was built as part of a hands-on data engineering learning experience inspired by Bara’s Data Warehouse project.
