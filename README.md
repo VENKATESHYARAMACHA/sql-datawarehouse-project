@@ -155,7 +155,7 @@ To maintain consistency and readability across the data warehouse, the following
 - T-SQL (SQL Server) for ETL processes, data transformation, and modeling  
 - Git & GitHub for version control  
 
-## 🚀 How to Run (SSMS)
+## 🚀 How to Run
 
 ### 1. Clone the repository
 ```bash
