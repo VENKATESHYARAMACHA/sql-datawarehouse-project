@@ -157,33 +157,39 @@ To maintain consistency and readability across the data warehouse, the following
 
 ## 🚀 How to Run (SSMS)
 
-1. **Clone the repository**
+### 1. Clone the repository
 ```bash
 git clone https://github.com/VENKATESHYARAMACHA/sql-datawarehouse-project.git
 cd sql-datawarehouse-project
-
-Open SQL Server Management Studio (SSMS)
-Connect to your SQL Server and open a new query window.
-Run scripts in order
-
--- Setup
+```
+### 2. Open SQL Server Management Studio (SSMS)
+     - Connect to your SQL Server
+     - Open a new query window
+### 3. Run scripts in order
+```SQL
+  -- Setup
 scripts/setup/create_database.sql
-
+```
+```SQL
 -- Bronze Layer
 scripts/bronze/create_bronze_tables.sql
 scripts/bronze/load_bronze_data.sql
-
+```
+```SQL
 -- Silver Layer
 scripts/silver/create_silver_tables.sql
 scripts/silver/load_silver_data.sql
-
+```
+```SQL
 -- Gold Layer
 scripts/gold/create_gold_views.sql
+```
 
+```SQL
 -- Validation (Optional)
 validation/silver_checks.sql
 validation/gold_checks.sql
-
+```
 📌 Notes
 Execute scripts sequentially: setup → bronze → silver → gold
 Update file paths in BULK INSERT based on your local system
