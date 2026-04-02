@@ -102,9 +102,8 @@ data-warehouse-project/
 │
 ├── scripts/                          # SQL scripts for building the data warehouse
 │
-│ ├── setup/                          # Initial database setup
-│ │ └── create_database.sql           # Creates database and schemas (bronze, silver, gold)
-│
+│ ├── create_database.sql             # Creates database and schemas (bronze, silver, gold)
+│ 
 │ ├── bronze/                         # Bronze layer (raw data ingestion)
 │ │ ├── create_bronze_tables.sql      # Defines raw tables exactly as source structure (no transformations)
 │ │ └── load_bronze_data.sql          # Loads data from source files into bronze tables
@@ -121,8 +120,7 @@ data-warehouse-project/
 │ └── gold_checks.sql                 # Validates gold layer (key integrity, relationships)
 │
 ├── README.md                         # Project overview and execution steps
-├── LICENSE                           # License information
-└── .gitignore                        # Files to be ignored by Git
+└── LICENSE                           # License information
 ```
 
 ## 📏 Naming Conventions
