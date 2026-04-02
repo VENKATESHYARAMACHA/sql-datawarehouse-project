@@ -98,7 +98,7 @@ data-warehouse-project/
 │ ├── data_architecture.jpg           # High-level architecture of the data warehouse
 │ ├── data_flow.jpg                   # ETL flow (Bronze → Silver → Gold)
 │ ├── data_model.jpg                  # Star schema (fact and dimension design)
-│ ├── naming-conventions.md           # Rules for naming tables, columns, and objects
+│ ├── naming_conventions.md           # Rules for naming tables, columns, and objects
 │
 ├── scripts/                          # SQL scripts for building the data warehouse
 │
