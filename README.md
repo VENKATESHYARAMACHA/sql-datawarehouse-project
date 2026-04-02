@@ -190,7 +190,7 @@ scripts/gold/create_gold_views.sql
 validation/silver_checks.sql
 validation/gold_checks.sql
 ```
-📌 Notes  
+📌 Notes
 - Execute scripts sequentially: setup → bronze → silver → gold
 - Update file paths in BULK INSERT based on your local system
 - Each script includes inline comments for guidance
