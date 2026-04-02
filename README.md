@@ -159,13 +159,13 @@ To maintain consistency and readability across the data warehouse, the following
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/data-warehouse-project.git
-cd data-warehouse-project
+git clone https://github.com/VENKATESHYARAMACHA/sql-datawarehouse-project.git
+cd sql-datawarehouse-project
 
-2. Open SQL Server Management Studio (SSMS)
+Open SQL Server Management Studio (SSMS)
 Connect to your SQL Server and open a new query window.
-3. Run Scripts in order
-</> SQL
+Run scripts in order
+
 -- Setup
 scripts/setup/create_database.sql
 
@@ -188,6 +188,6 @@ validation/gold_checks.sql
 Execute scripts sequentially: setup → bronze → silver → gold
 Update file paths in BULK INSERT based on your local system
 Each script includes inline comments for guidance
----
+
 ## 🙌 Acknowledgements
 This project was built as part of a hands-on data engineering learning experience inspired by Bara’s Data Warehouse project.
