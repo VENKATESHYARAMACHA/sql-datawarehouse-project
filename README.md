@@ -155,33 +155,39 @@ To maintain consistency and readability across the data warehouse, the following
 - T-SQL (SQL Server) for ETL processes, data transformation, and modeling  
 - Git & GitHub for version control  
 
-## 🚀 How to Run
+## 🚀 How to Run (SSMS)
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/sql-data-warehouse-project.git
-   cd sql-data-warehouse-project
-   ```
+1. **Clone the repository**
+```bash
+git clone https://github.com/your-username/data-warehouse-project.git
+cd data-warehouse-project
 
-2. Set up SQL Server and create a database:
-   ```sql
-   CREATE DATABASE data_warehouse;
-   ```
+2. Open SQL Server Management Studio (SSMS)
+Connect to your SQL Server and open a new query window.
+3. Run Scripts in order
+</> SQL
+-- Setup
+scripts/setup/create_database.sql
 
-3. Execute SQL scripts layer by layer:
+-- Bronze Layer
+scripts/bronze/create_bronze_tables.sql
+scripts/bronze/load_bronze_data.sql
 
-   - **Bronze Layer**
-     - Run DDL scripts (table creation)
-     - Run data load scripts (raw data ingestion)
+-- Silver Layer
+scripts/silver/create_silver_tables.sql
+scripts/silver/load_silver_data.sql
 
-   - **Silver Layer**
-     - Run DDL scripts (cleaned table creation)
-     - Run transformation scripts (data cleaning and standardization)
+-- Gold Layer
+scripts/gold/create_gold_views.sql
 
-   - **Gold Layer**
-     - Run the script to create fact and dimension views
+-- Validation (Optional)
+validation/silver_checks.sql
+validation/gold_checks.sql
 
-> Each SQL file contains inline comments explaining execution steps.
-
+📌 Notes
+Execute scripts sequentially: setup → bronze → silver → gold
+Update file paths in BULK INSERT based on your local system
+Each script includes inline comments for guidance
+---
 ## 🙌 Acknowledgements
 This project was built as part of a hands-on data engineering learning experience inspired by Bara’s Data Warehouse project.
