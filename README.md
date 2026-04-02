@@ -88,29 +88,41 @@ These tables are connected using primary and foreign keys, enabling efficient qu
 ## 📂 Project Structure
 
 ```
-sql-data-warehouse-project/
+data-warehouse-project/
 │
-├── README.md
-├── .gitignore
+├── data/ # Raw source data used for the project
+│ ├── source_crm/ # CRM system data files (customers, products, sales)
+│ ├── source_erp/ # ERP system data files (customer info, locations, categories)
 │
-├── data/
-│   ├── bronze/
-│   ├── silver/
-│   └── gold/
+├── docs/ # Project documentation and diagrams
+│ ├── data_architecture.jpg # High-level architecture of the data warehouse
+│ ├── data_flow.jpg # ETL flow (Bronze → Silver → Gold)
+│ ├── data_model.jpg # Star schema (fact and dimension design)
+│ ├── naming-conventions.md # Rules for naming tables, columns, and objects
 │
-├── sql/
-│   ├── bronze/        # raw data loading
-│   ├── silver/        # transformations
-│   ├── gold/          # fact, dimension tables & views
+├── scripts/ # SQL scripts for building the data warehouse
 │
-├── etl/
-│   ├── extract.sql
-│   ├── transform.sql
-│   └── load.sql
+│ ├── setup/ # Initial database setup
+│ │ └── create_database.sql # Creates database and schemas (bronze, silver, gold)
 │
-├── docs/
-│   ├── architecture.png
-│   ├── data_model.png
+│ ├── bronze/ # Bronze layer (raw data ingestion)
+│ │ ├── create_bronze_tables.sql # Defines raw tables exactly as source structure (no transformations)
+│ │ └── load_bronze_data.sql # Loads data from source files into bronze tables
+│
+│ ├── silver/ # Silver layer (cleaned and transformed data)
+│ │ ├── create_silver_tables.sql # Creates cleaned tables with corrected data types and metadata columns
+│ │ └── load_silver_data.sql # Transforms bronze data (cleaning, standardization, business logic)
+│
+│ ├── gold/ # Gold layer (business-ready data model)
+│ │ └── create_gold_views.sql # Creates dimension and fact views (star schema)
+│
+├── validation/ # Data quality and validation scripts
+│ ├── silver_checks.sql # Validates silver layer (NULLs, duplicates, business rules)
+│ └── gold_checks.sql # Validates gold layer (key integrity, relationships)
+│
+├── README.md # Project overview and execution steps
+├── LICENSE # License information
+└── .gitignore # Files to be ignored by Git
 ```
 
 ## 📏 Naming Conventions
