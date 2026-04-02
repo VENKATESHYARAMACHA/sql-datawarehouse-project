@@ -54,8 +54,8 @@ The project follows a **Medallion Architecture** approach:
 - The data is then moved to the Silver layer, where it is cleaned, standardized, and validated.  
 - From the Silver layer, data is modeled and organized into the Gold layer as analytical views:  
   - fact_sales → contains transactional/measurable data
-  - dim_customers → contains customer details
-  - dim_products → contains product information
+  - dim_customer → contains customer details
+  - dim_product → contains product information
 
 ## 🔄 ETL Process
 
@@ -81,7 +81,7 @@ The Gold layer follows a **Star Schema** design:
 
 - **Dimension Tables**
   - `dim_customer` → contains customer-related information  
-  - `dim_products` → contains product-related information  
+  - `dim_product` → contains product-related information  
 
 These tables are connected using primary and foreign keys, enabling efficient querying and making the data ready for downstream analytics and reporting.
 
