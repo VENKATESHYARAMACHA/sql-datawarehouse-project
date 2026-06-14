@@ -196,4 +196,6 @@ validation/gold_checks.sql
 - Each script includes inline comments for guidance
 
 ## 🙌 Acknowledgements
-This project was built as part of a hands-on data engineering learning experience inspired by Bara’s Data Warehouse project.
+
+The implementation approach adopted in this project was inspired by industry standard data warehousing practices and the Data Warehouse project shared by Dr. Bara.
+This project was independently developed to deepen my practical understanding of SQL based data warehousing, ETL processes, dimensional modelling and analytics ready data platforms.
