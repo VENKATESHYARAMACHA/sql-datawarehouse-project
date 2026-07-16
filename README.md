@@ -195,7 +195,7 @@ validation/gold_checks.sql
 - Update file paths in BULK INSERT based on your local system
 - Each script includes inline comments for guidance
 
-## Key Learnings
+## 📚 Key Learnings
 
 This project strengthened my understanding of:
 
