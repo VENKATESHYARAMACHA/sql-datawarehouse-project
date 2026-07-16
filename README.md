@@ -195,6 +195,22 @@ validation/gold_checks.sql
 - Update file paths in BULK INSERT based on your local system
 - Each script includes inline comments for guidance
 
+## Key Learnings
+
+This project strengthened my understanding of:
+
+• Medallion Architecture
+
+• ETL design
+
+• Data validation
+
+• Dimensional modelling
+
+• SQL Server scripting
+
+• Star schema design
+
 ## 🙌 Acknowledgements
 
 The implementation approach adopted in this project was inspired by industry standard data warehousing practices and the Data Warehouse project shared by Dr. Bara.
